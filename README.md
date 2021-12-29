@@ -3,3 +3,7 @@
  
  This program allows the user to add / remove students before the roster is finally being sorted and printed to a text file (studentRoster.txt).
 
+# Program Usage samples with screenshots
+## First run (assuming roster.txt is found):
+![image](https://user-images.githubusercontent.com/31665473/147691351-263f888b-741a-4a97-b0bf-8d1885f666d1.png)
+

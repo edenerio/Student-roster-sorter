@@ -37,4 +37,10 @@ This traverses through the Binary Search Tree in-order.
 * **Searching for a student in the current roster:** <br><br>
 ![image](https://user-images.githubusercontent.com/31665473/147695508-6c0cbe66-a7c0-481e-b25b-42d7c0ac0f87.png)<br>
 This feature implements binary search for a faster run time.
+<br>
+<br>
+
+* **Saving and exiting:** <br><br>
+![image](https://user-images.githubusercontent.com/31665473/147695982-6eda59be-833c-491b-aefb-2edae5e56b59.png)<br>
+When done, the current roster will be saved in a text file called "studentRoster.txt" and the waiting list saved in "waitingList.txt".
 

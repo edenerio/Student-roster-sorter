@@ -10,7 +10,7 @@
 ![image](https://user-images.githubusercontent.com/31665473/147693655-816e8ff3-d927-429a-a00d-c8b4d8d1ed32.png)<br>
 The Program is set to only have a maximum roster of 20. If "roster.txt" has more than 20 valid students (not duplicates), then the first 20 listed students from the roster text file will be added to the current roster and the rest will go to the waiting list.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***NOTE*** : The current roster at this point is structured as a Binary Tree for better search time and the waiting list is using Queue.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***NOTE*** : The roster at this point is structured as a Binary Tree and the waiting list is using Queue.
 <br>
 <br>
 

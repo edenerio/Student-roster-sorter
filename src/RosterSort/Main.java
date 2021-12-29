@@ -68,14 +68,17 @@ public class Main {
 			System.out.println("Menu:");
 			System.out.println("1. Add Student");
 			System.out.println("2. Drop Student");
-			System.out.println("3. Print current roster");
-			System.out.println("4. Save and Close Program");
+			System.out.println("3. Search Student in the current roster");
+			System.out.println("4. Print current roster");
+			System.out.println("5. Save and Close Program");
 			
 			opt = scan.nextInt();
 			
 			switch(opt) {
 			case 1:
 				//Adding Student
+				
+				//input taker
 				System.out.println("Enter Student First Name: ");
 				String fn = scan.next();
 				
@@ -151,10 +154,35 @@ public class Main {
 				break;
 				
 			case 3:
-				//print current roster
-				System.out.println(studentList.toString());
+				//search for a student within the roster
+				
+				//input taker
+				System.out.println("Enter Student First Name: ");
+				String firstN = scan.next();
+				
+				System.out.println("Enter Student Last Name: ");
+				String lastN = scan.next();
+				
+				System.out.println("Enter Student ID Number: ");
+				String idN = scan.next();
+				
+				//creating the student
+				StudentRecord toSearch = new StudentRecord(firstN, lastN, idN);
+				StudentRecord temp = studentList.search(toSearch);
+				if(temp == null) {
+					break;
+				}else {
+					System.out.println("Student found: " + temp.toString());
+				}
+				
+				break;
 				
 			case 4:
+				//print current roster
+				System.out.println(studentList.toString());
+				break;
+				
+			case 5:
 				//Save and Close program. Save roster and waiting list on 2 different files.
 				
 				PrintWriter out = new PrintWriter("studentRoster.txt");
@@ -177,7 +205,7 @@ public class Main {
 				out2.close();
 			}
 			
-		}while(opt != 4);
+		}while(opt != 5);
 		
 		scan.close();
 		System.out.println("Program Exited.");
